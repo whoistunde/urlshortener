@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Urlshortener</title>
+</head>
+<body>
+    <div class="header">
+        Shorten Your Url
+    </div>
+    <div class="form">
+        <div class="form-element">
+            <label for="longurl">  Enter Url</label>
+            <input type="text" id="longurl" placeholder="http://site.com">
+        </div>
+        <div class="form-element">
+            <button id="create-short-url">Shorten</button>
+        </div>
+        <div class="result">
+            <a href="#" id="short-url"></a>
+        </div>
+    </div>
+    <div class="list">
+        <h2>Shortened links</h2>
+        <table id="list_urls">
+            <thead>
+                <tr>
+                    <th>LongURL</th>
+                    <th>ShortURL</th>
+                    <th>Count</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
